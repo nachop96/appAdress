@@ -4,7 +4,7 @@ import Place from "../../models/places";
 const { ADD_PLACE} = PLACES;
 
 const initialState = {
-    places: []
+    places: [],
 };
 
 export default (state = initialState, action) => {
@@ -13,7 +13,7 @@ export default (state = initialState, action) => {
                 const newPlace = new Place(Date.now(), action.place.name);
                 return {
                     ...state,
-                    places: state.places.concat(newPlace)
+                    places: state.places.concat(newPlace),
                 }
         default:
             return state;

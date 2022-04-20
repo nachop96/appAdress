@@ -13,7 +13,7 @@ const PlaceList = ({ navigation }) => {
     const renderItem = ({item}) => {
         <PlaceItem
             name={item.name}
-            adress='123 calle,ciudad'
+            address='123 calle,ciudad'
             onSelect={() => onSelectDetail()}
         />
     }
