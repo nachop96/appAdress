@@ -1,12 +1,20 @@
 import { PLACES } from "../types/index";
 
-const { ADD_PLACES } = PLACES;
+const { ADD_PLACE } = PLACES;
 
-export const addPlace = (name) => {
-    return {
-        type: ADD_PLACES,
-        place: {name}
+
+export default {
+    addPlace: (name) => {
+        return {
+            type: ADD_PLACE,
+            place: {
+                name
+            }
+        }
     }
 
 
-};
+
+
+
+}
